@@ -1,0 +1,10 @@
+- name: variables from play
+  hosts: web
+  vars:
+    course: "AWS"
+    Duration: "110hr"
+    Trainer: "siva"
+  tasks:
+  -name: check variables
+   ansible.bulitin.debug
+    msg "Hi,iam learing {{course}}, Trainer is {{Trainer}},Duration is{{Duration}}""
